@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #BFD7E4;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 465px;
+    
+    background: #293241;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.page {
+    width: 750px;
+    margin: auto;
+}
+
+h1, legend {
+    font-family: 'Staatliches', cursive;
+}
+
+
+header {
+    height: 465;
+    
+    margin-top: 103px;
+
+    text-align: center;
+}
+
+header h1, header p {
+    color: white;
+    font-weight: 400;
+}
+
+header h1 {
+    font-size: 36px;
+    line-height: 45px;
+    margin-top: 100px;
+}
+
+
+header p {
+    font-size: 16px;
+    line-height: 24px;   
+}
+
+.top {
+    background-color: #F67669;
+    width: 750px;
+    height: 133px;
+    color: #FFFFFF;   
+
+    border-radius: 20px 20px 0px 0px;
+
+    margin-top: 32px;
+
+    font-family: 'Staatliches', cursive;
+    font-size: 24px;
+    line-height: 34px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+form {
+    background: #FFFFFF;
+    min-height: 300px;
+    border-radius: 0px 0px 20px 20px;
+    
+    padding: 64px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+fieldset {
+    border: none;
+}
+
+
+fieldset legend {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+
+    text-align: center;
+
+    width: 100%;   
+
+    color: #253B51;
+}
+
+span {
+    color: #C1BCCC;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.main {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #E6E6F0;
+    margin-bottom: 36px;
+}
+
+.fieldset-section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.fieldset-date {
+    margin-bottom: 16px;
+}
+
+
+
+.col-2 {
+    display: flex;
+    gap: 22px;
+}
+
+.col-2 .input-section {
+    margin-bottom: 16px;
+}
+
+.col-2 .input-section input {
+    width: 300px;
+}
+
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-section textarea {
+    width: 608px;
+    height: 166px;
+
+    background: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+    padding: 0 24px;
+    
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.input-section label {
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #4E4958;
+
+    margin-bottom: 8px;
+}
+
+.input-section input {
+    background: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+    height: 56px;
+
+    padding: 0 24px;
+    
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.input-section select {
+    background: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+    height: 56px;
+
+    padding: 0 24px;
+    
+    font-size: 16px;
+    line-height: 26px;
+
+    width: 300px;
+
+    margin-bottom: 31px;
+}
+
+.input-section #time {
+    width: 140px;
+}
+
+.input-section #date {
+    width: 300px;
+}
+
+
+
+.mentorship legend {
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 8px;
+}
+
+.col-3 {
+    display: flex;
+    gap: 20px;
+
+}
+
+button {
+    width: 608px;
+    height: 55.65px;
+    
+    background-color: #F67669;
+    color: #FFFFFF;
+    
+    border: none;
+    border-radius: 8px;
+
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    line-height: 26px;
+} 
+
+button:hover {
+    background-color: #c96156;
+}
+
+input:invalid {
+    border: 1px solid #FF1010;
+}
+
+.check-section {
+    margin-top: 29px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 14px;
+    line-height: 24px;
+    
+    color: #4E4958;
+
+    
+}
+
+.check-section input {
+    display: none;
+}
+
+.check-section label::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+
+    display: block;
+    
+    border: 1px solid #E6E6F0;
+
+    border-radius: 8px;
+}
+
+.check-section label {
+    display: flex;
+    gap: 8px;
+}
+
+.check-section img {
+    position: absolute;
+    left: 0,5;
+}
+
+.check-section input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A")
+}
+
