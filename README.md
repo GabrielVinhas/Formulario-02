@@ -1,6 +1,6 @@
 # Formulário 02
 
-<img height="300px" src="https://i.imgur.com/sGc6u4G.gif">
+<img src="https://i.imgur.com/sGc6u4G.gif">
 
 Projeto original do Figma: https://www.figma.com/file/QUr7UHLmi6PErtka6r02dr/Stage-03---Formul%C3%A1rio-avan%C3%A7ado-(Copy)
 
